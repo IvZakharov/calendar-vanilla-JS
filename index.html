@@ -1,0 +1,59 @@
+<!DOCTYPE HTML>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Calendar App Vanilla js</title>
+    <meta ncame="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="format-detection" content="telephone=no">  
+    <meta name="author" content="">
+
+	<!-- Custom styles for this template -->
+	<link href="css/style.css" rel="stylesheet">
+  </head>
+  <body>
+    <main class="main">
+      <div class="container" id="container">
+        <div class="header" id="header">
+          <p id="monthDisplay"></p>
+
+          <div>
+            <button id="backButton">Back</button>
+            <button id="nextButton">Next</button>
+          </div>
+        </div>
+        
+        <div class="weekdays" id="weekdays">
+          <div>Monday</div>
+          <div>Tuesday</div>
+          <div>Wednesday</div>
+          <div>Thursday</div>
+          <div>Friday</div>
+          <div>Saturday</div>
+          <div>Sunday</div>
+        </div>
+
+        <div class="calendar" id="calendar">
+
+        </div>
+
+        <div id="newEventModal">
+          <h2>New Event</h2>
+
+          <input id="eventTitleInput" type="text" placeholder="Event title">
+          <button id="saveButton">Save</button>
+          <button id="cancelButton">Cancel</button>
+        </div>
+
+        <div id="deleteEventModal">
+          <h2>Event </h2>
+
+          <p id="eventText"></p>
+          <button id="deleteButton">Delete</button>
+          <button id="closeButton">Close</button>
+        </div>
+
+        <div id="modalBackDrop"></div>
+      </div>
+    </main>
+    <script src="js/main.js"></script>
+  </body>
